@@ -1,0 +1,39 @@
+{% load static %}
+<div class="col-md-3 sayfa-right ps-4">
+    <div class="sidebar">
+        <div class="sayfa-taslak_title">
+            <img class="pe-2" src="{% static 'images/header/hamburger.svg' %}" alt="" />
+            Menü
+        </div>
+        <div class="list-group">
+            <a href="{% url 'anasayfa' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/anasayfa.svg' %}" alt="" />
+                Anasayfa
+            </a>
+            <a href="{% url 'hakkimizda' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/hakkimizda.svg' %}" alt="" />
+                Hakkımızda
+            </a>
+            <a href="{% url 'projelerimiz' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/projeler.svg' %}" alt="" />
+                Projeler
+            </a>
+            <a href="{% url 'hizmetlerimiz' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/hizmetler.svg' %}" alt="" />
+                Hizmetlerimiz
+            </a>
+            <a href="{% url 'portfolio' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/urunler.svg' %}" alt="" />
+                Ürünlerimiz
+            </a>
+            <a href="{% url 'blogs' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/haberler.svg' %}" alt="" />
+                Haberler
+            </a>
+            <a href="{% url 'iletisim' %}" class="list-group-item list-group-item-action">
+                <img src="{% static 'images/header/iletisim.svg' %}" alt="" />
+                İletişim
+            </a>
+        </div>
+    </div>
+</div>

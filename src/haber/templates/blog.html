@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+{% include 'includes/banner.html' %}
+
+<section class="sayfa-taslak">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-9 sayfa-left pb-5">
+                <div class="sayfa-icerik-yazi">
+                    <div class="haberler-sayfa">
+                        {% for obj in blogs  %}
+                        <div class="haber">
+                            <img class="haber-left-pic" src="{{obj.image.url}}" alt="" />
+                            <h3>{{obj.title|safe}}</h3>
+                            <p>{{obj.intro|safe}}</p>
+                            <span>{{obj.created_date}}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            {% include 'includes/blogsidebar.html' %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

@@ -1,0 +1,480 @@
+@media (max-width: 768px) {
+  /* html {
+    display: none !important;
+  } */
+  /* Navbar */
+  #myNav {
+    display: block;
+  }
+  .top-bar {
+    display: none;
+  }
+  #navbar {
+    /* display: flex; */
+  }
+  #navbar .navbar-full .navbar-icerik {
+    display: none;
+  }
+  /* Hamburger-menü */
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 50000 !important;
+    top: 0;
+    right: 0;
+    background-color: #15a964 !important;
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .overlay-content .dropdown-btn {
+    border: none;
+    background: #15a964;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .overlay .overlay-content .dropdown-btn img {
+    width: 13px;
+    margin-left: 10px;
+  }
+  .dropdown-container {
+    display: none;
+    background-color: #20385e;
+    padding-left: 0;
+  }
+  .dropdown-container a {
+    padding-left: 0;
+    color: #999999 !important;
+  }
+  .overlay .closebtn {
+    position: relative;
+    top: 10px;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .hamburger-close-button {
+    position: absolute;
+    /* display: contents; */
+    /* bottom: 15px; */
+    text-align: center;
+    top: 0;
+    right: 20px;
+  }
+  #mobile-navbar-right {
+    display: block;
+  }
+  /* Banner */
+  .banner {
+    background-image: url(../images/banner/banner-mobile.jpg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 20px 0; */
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: initial;
+  }
+  .banner .banner-left {
+    width: 100%;
+  }
+  .banner .banner-left h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 35px;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .banner .banner-left p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .banner .banner-left .banner-links {
+    display: none;
+  }
+  /* Referans Solar-sıkca */
+  .content-1 {
+    padding: 10px 0;
+  }
+  .content-1 .content-1-icerikler {
+    flex-wrap: wrap;
+  }
+  .content-1 .content-1-icerikler .content-1-icerik {
+    padding: 10px;
+    margin-bottom: 17px;
+    width: 49%;
+  }
+  .content-1 .content-1-icerikler .content-1-icerik .container-1-icon img {
+    width: 80%;
+  }
+  .content-1 .content-1-icerikler .content-1-icerik .container-1-title {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  /* Günes Enerji Santrali */
+  .gunes-enerji-santral .gunes-enerji-icerik h2 {
+    font-size: 27px;
+    text-align: center;
+    width: 73%;
+  }
+  .gunes-enerji-santral .gunes-enerji-icerik p {
+    width: 100%;
+    font-size: 17px;
+  }
+  /* Haberler */
+  .haberler {
+    padding: 20px 0;
+  }
+  .haberler .haberler-title h2 {
+    font-size: 20px;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
+  .haberler-swipper .swiper-slide {
+    display: flex;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px 50px;
+    border-radius: 5px;
+  }
+  .haberler-swipper .swiper-button-prev {
+    right: auto;
+    top: auto;
+    left: 38%;
+    bottom: 30px;
+  }
+  .haberler-swipper .swiper-button-next {
+    top: auto;
+    bottom: 30px;
+    right: 38%;
+  }
+  /* Projelendirme Süreçleri */
+  .projelendirme-surecleri {
+    padding: 20px 0;
+  }
+  .projelendirme-surecleri .projelendirme-surecleri-title h2 {
+    font-size: 20px;
+    padding: 5px 0;
+    margin-bottom: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .projelendirme-surecleri .projelendirme-surecleri-icerikler {
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .projelendirme-surecleri .projelendirme-surecleri-icerikler .surec-icerik {
+    width: 48%;
+
+    margin-bottom: 15px;
+  }
+  .projelendirme-surecleri .projelendirme-bilgi p {
+    display: none;
+  }
+  /* Kazanımlar */
+  .kazanimlar {
+    padding: 20px 0;
+  }
+  .kazanimlar .kazanimlar-title {
+    align-items: center;
+  }
+  .kazanimlar .kazanimlar-title h5 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .kazanimlar .kazanimlar-title h2 {
+    font-size: 22px;
+  }
+  .kazanimlar .kazanimlar-icerikler {
+    margin: 10px 0;
+  }
+  .kazanimlar .kazanimlar-icerikler .kazanim-detay {
+    padding: 10px 0;
+    width: 50%;
+  }
+  /* Güneşi Seviyoruz  */
+  .gunes-biz {
+    padding: 20px 0;
+  }
+  .gunes-biz .gunes-biz-icerik .gunes-biz-left {
+    width: 50%;
+    display: none;
+  }
+  .gunes-biz .gunes-biz-icerik .gunes-biz-right {
+    width: 100%;
+    align-items: center;
+  }
+  .gunes-biz .gunes-biz-icerik .gunes-biz-right h2 {
+    width: 70%;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .gunes-biz .gunes-biz-icerik .gunes-biz-right p {
+    color: #fff;
+  }
+  #gunesi-seviyoruz-index {
+    display: none;
+  }
+  #biz-kimiz-index {
+    background-image: url(../images/biz-kimiz-mobile.jpg);
+  }
+  /* Referans Projelerimiz */
+  .referans-projeleri {
+    padding: 20px 0;
+  }
+  .referans-projeleri .referans-projleri-title h4 {
+    font-size: 17px;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  .referans-projeleri .referans-projleri-title h2 {
+    font-size: 26px;
+    padding: 5px 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .referans-projeleri .referans-projeler {
+    /* margin: 30px 0; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .referans-projeleri .referans-projeler .referans-proje {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  /* S.s.s */
+  .sikca-sorulan-sorular {
+    padding: 20px 0;
+  }
+  .sikca-sorulan-sorular .sorular-baslik h2 {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+  }
+  /* İletisim */
+  .iletisim {
+    padding: 20px 0;
+  }
+  .iletisim .iletisim-baslik h2 {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+  }
+  .iletisim .iletisim-icerik {
+    margin-top: 0;
+  }
+  .iletisim .iletisim-icerik form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .iletisim .iletisim-icerik .input-group {
+    width: 100%;
+  }
+  /* Footer */
+  #footer-masaustu {
+    display: none;
+  }
+  #footer-mobile {
+    display: block;
+    background-color: #15a964;
+    padding: 10px 0 0;
+  }
+  #footer-mobile .footer-mobile-logo {
+    text-align: center;
+    padding: 10px 0 15px;
+  }
+  #footer-mobile .footer-mobile-icerikler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #footer-mobile .footer-mobile-icerikler .footer-mobile-icerik {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background: #168d55;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 25px 5px 0;
+    height: 240px;
+  }
+  #footer-mobile .footer-mobile-icerikler .footer-mobile-icerik span {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    padding: 35px 0 20px;
+  }
+  #footer-mobile .footer-mobile-icerikler .footer-mobile-icerik a {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3px;
+    font-size: 15px;
+  }
+  #footer-mobile .footer-mobile-icerikler .footer-mobile-icerik p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  footer .footer-copyright {
+    padding: 7px 0;
+    flex-direction: column;
+    background-color: #414141;
+  }
+  footer .footer-copyright .footer-mobile-first-span {
+    display: flex;
+    padding: 0 60px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  footer .footer-copyright span {
+    font-size: 12px;
+  }
+  /* Sayfalar */
+  .sayfa-banner {
+    height: 100px;
+  }
+  .sayfa-banner h2 {
+    font-size: 26px;
+
+    text-align: center;
+  }
+  .sayfa-banner .sayfa-link {
+    display: none;
+  }
+  .sayfa-taslak .sayfa-left .sayfa-hakkimizda-baslik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sayfa-taslak .sayfa-left .sayfa-hakkimizda-baslik h5 {
+    display: none;
+  }
+  .sayfa-taslak .sayfa-left .sayfa-hakkimizda-baslik h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .sayfa-taslak .sayfa-right {
+    display: none;
+  }
+  /* kacanımlar */
+  .nav-pills > li > a {
+    font-size: 17px;
+  }
+  .hizmet-kazanim-sayfa .tab-content {
+    margin-top: 20px;
+  }
+  .hizmet-kazanim-sayfa .tab-content .tab-pane h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .hizmet-kazanim-sayfa .tab-content .tab-pane p {
+    font-size: 16px;
+  }
+  /* Referans Projeler */
+  .referans-projeler-page .projeler-page {
+    margin: 30px 0;
+  }
+  .referans-projeler-page .projeler-page .proje-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .referans-projeler-page .projeler-page .proje-page .proje-page-pic {
+    width: 100%;
+  }
+  .referans-projeler-page .projeler-page .proje-page .proje-page-icerik {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .referans-projeler-page .projeler-page .proje-page .proje-page-icerik h3 {
+    text-align: center;
+  }
+  .referans-projeler-page .projeler-page .proje-page .proje-page-icerik p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    margin-bottom: 15px;
+  }
+  /* HAberler */
+  .sayfa-taslak
+    .sayfa-left
+    .sayfa-icerik-yazi
+    .haberler-sayfa
+    .haber
+    .haber-left-pic {
+    float: left;
+    margin: 0;
+    object-fit: cover;
+    height: 300px !important;
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .sayfa-taslak .sayfa-left .sayfa-icerik-yazi .haberler-sayfa .haber h3 {
+    font-size: 22px;
+
+    text-align: center;
+    /* margin-bottom: 10px; */
+  }
+  /* URunler */
+  .sayfa-taslak .sayfa-left .urunler-sayfa .urun {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+    margin-right: 9px;
+  }
+  .sayfa-taslak .sayfa-left .urun-aciklama {
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 16px;
+  }
+}

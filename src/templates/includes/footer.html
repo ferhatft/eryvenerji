@@ -1,0 +1,152 @@
+{% load static %}
+<!-- Footer -->
+<footer id="footer-masaustu">
+    <div class="container">
+        <div class="footer-head">
+            <img src="{% static 'images/footer-logo.png' %}" alt="" />
+        </div>
+        <div class="row" id="footer-row">
+            <div class="col-4 footer-col">
+                <h3>Hakkımızda</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod
+                </p>
+            </div>
+            <div class="col-3 footer-col">
+                <h3>Hızlı Menü</h3>
+                <ul>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'anasayfa' %}">Anasayfa </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'hakkimizda' %}">Hakkımızda </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'portfolio' %}">Ürünler </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'hizmetlerimiz' %}">Hizmetler </a>
+                    </li>
+
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'projelerimiz' %}">Referans Projelerimiz </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'kazanimlarimiz' %}">Kazanımlar</a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="{% url 'blogs' %}">Haberler</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 footer-col">
+                <h3>İletişim Kanalları</h3>
+                <ul>
+                    <li class="iletisim-footer-li">
+                        <h4>ADRES</h4>
+                        <span>Karşıyaka Mahallesi Şehit Yalçın <br />
+                            Yamaner Bulvarı No 61-3 <br />
+                            Altınordu/ORDU
+                        </span>
+                    </li>
+                    <li class="iletisim-footer-li">
+                        <h4>TELEFON</h4>
+                        <span class="pb-1"><b>Merkez:</b> 0(258)2617919</span>
+                        <span><b>Depo:</b> 0(258)2418034</span>
+                    </li>
+                    <li class="iletisim-footer-li">
+                        <h4>MAİL</h4>
+                        <span class="pb-1"><b>Destek:</b> destek@eryuvaenerji.com.tr
+                        </span>
+                        <span><b>Bilgi:</b> bilgi@eryuvaenerji.com.tr </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2 footer-col">
+                <h3>Sosyal Medya</h3>
+                <ul>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="#">Facebook </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="#">Instagram </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="#">Twitter </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="#">WhatsApp </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/index-icon/footer-cizgi.svg' %}" alt="" />
+                        <a href="#">LinkedIn </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright © 2023 Eryuva Enerji. Tüm Hakları Alınmıştır.</span>
+            <span><a href="https://www.ultimatasarim.com/">Ultimatasarim.com </a>
+                tarafından tasarlanmış ve geliştirilmiştir.</span>
+        </div>
+    </div>
+</footer>
+<footer id="footer-mobile">
+    <div class="container">
+        <div class="footer-mobile-logo">
+            <img src="{% static 'images/footer-logo.png' %}" alt="" />
+        </div>
+        <div class="footer-mobile-icerikler">
+            <div class="footer-mobile-icerik">
+                <img src="{% static 'images/footer/adress.svg' %}" alt="" />
+                <span>Adres</span>
+                <a href="#">Karşıyaka Mahallesi Şehit Yalçın Yamaner Bulvarı No 61-3
+                    Altınordu/ORDU</a>
+            </div>
+            <div class="footer-mobile-icerik">
+                <img src="{% static 'images/footer/phone.svg' %}" alt="" />
+                <span>Telefon</span>
+                <a href="#">Merkez: 0(258)2617919 </a>
+                <a href="#">Depo: 0(258)2418034 </a>
+            </div>
+            <div class="footer-mobile-icerik">
+                <img src="{% static 'images/footer/mail.svg' %}" alt="" />
+                <span>Email</span>
+                <a style="letter-spacing: -1px; padding-bottom: 5px"
+                    href="mailto:bakirsoymetal@gmail.com">bilgi@gmail.com
+                </a>
+            </div>
+            <div class="footer-mobile-icerik">
+                <img src="{% static 'images/footer/time.svg' %}" alt="" />
+                <span>Çalışma Saatleri</span>
+                <p>
+                    Pazartesi-Cumartesi <br />
+                    <b>08:30-18.00</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="footer-mobile-first-span">Copyright © 2023 Eryuva Enerji Tüm Hakları Alınmıştır.</span>
+            <span><a href="https://www.ultimatasarim.com/">Ultimatasarim.com </a>
+                tarafından tasarlanmış ve geliştirilmiştir.</span>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Bootstap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Eryuva Enerji</title>
+  </head>
+  <body>
+    <!-- Hamburger Menu -->
+    <div id="myNav" class="overlay">
+      <div
+        class="hamburger-menu-logo"
+        style="padding-top: 25px; text-align: center"
+      >
+        <img src="images/footer-logo.png" alt="" />
+      </div>
+      <div class="hamburger-close-button">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+      </div>
+      <div class="overlay-content">
+        <a href="index.html">ANASAYFA </a>
+        <a href="hakkimizda.html">HAKKIMIZDA</a>
+        <!-- <button class="dropdown-btn">
+          ÜRÜNLER
+          <img src="./images/svg/hamburger-dropdown.svg" alt="" />
+        </button>
+        <div class="dropdown-container">
+          <a href="boru-ve-profiller-mobile.php">BORU VE PROFİLLLER</a>
+          <button class="dropdown-btn">
+            SACLAR <img src="./images/svg/hamburger-dropdown.svg" alt="" />
+          </button>
+          <div class="dropdown-container">
+            <a href="trapez-saclar-mobile.php">Trapez Saclar</a>
+            <a href="rulo-saclar-mobile.php">Rulo Saclar</a>
+            <a href="levha-saclar-mobile.php">Levha Saclar</a>
+            <a href="dilme-saclar-mobile.php">Dilme Saclar</a>
+          </div>
+          <a href="hadde-mamulleri-mobile.php">HADDE MAMÜLLER</a>
+          <a href="sandvic-panelleri-mobile.php">SANDVİC PANELLER</a>
+          <a href="plastik-cati-kaplamalari-mobile.php"
+            >PLASTİK ÇATI KAPLAMALARI</a
+          >
+          <a href="yalitim-malzemeleri-mobile.php">YALITIM MALZEMELERİ</a>
+          <a href="aksesuarlar-mobile.php">AKSESUARLAR</a>
+        </div> -->
+        <a href="urunler.html">ÜRÜNLER </a>
+        <a href="hizmetlerimiz.html">HİZMETLER </a>
+        <a href="referans-projeler.html">PROJELER </a>
+        <a href="kazanimlar.html">KAZANIMLAR </a>
+        <a href="iletisim.html">İLETİŞİM </a>
+      </div>
+    </div>
+    <!-- Header -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-icerikler">
+          <div class="icerik">
+            <div class="icerik-icon">
+              <img src="images/header/telefon.svg" alt="" />
+            </div>
+            <div class="icerik-yazi">
+              <a href="tel:+905333024589">
+                Size Bir Telefon Kadar Yakınız. <br />+90 533 302 45 89
+              </a>
+            </div>
+          </div>
+          <div class="icerik">
+            <div class="icerik-icon">
+              <img src="images/header/mail.svg" alt="" />
+            </div>
+            <div class="icerik-yazi">
+              <a href="mailto:info@eryuvaenerji.com.tr">
+                Bize Mail Yoluyla Ulaşın.
+                <br />info@eryuvaenerji.com.tr
+              </a>
+            </div>
+          </div>
+          <div class="icerik">
+            <div class="icerik-icon">
+              <img src="images/header/sosyal-medya.svg" alt="" />
+            </div>
+            <div class="icerik-yazi">
+              Bizi Takip Edin
+              <div class="social-medias">
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/fb.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/youtube.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/linkedin.svg" alt=""
+                /></a>
+
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/wp.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/twitter.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/header/sosyal-medya/insta.s" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="navbar" class="sticky-top">
+      <div class="container">
+        <div class="navbar-full">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/header/header-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="navbar-icerik">
+            <a href="index.html">
+              <img src="images/header/anasayfa.svg" alt="" />
+              Anasayfa
+            </a>
+            <a href="referans-projeler.html">
+              <img src="images/header/projeler.svg" alt="" />
+              Projeler
+            </a>
+            <a href="hizmetlerimiz.html">
+              <img src="images/header/hizmetler.svg" alt="" />
+              Hizmetlerimiz
+            </a>
+            <a href="urunler.html">
+              <img src="images/header/urunler.svg" alt="" />
+              Ürünlerimiz
+            </a>
+            <a href="haberler.html">
+              <img src="images/header/haberler.svg" alt="" />
+              Haberler
+            </a>
+            <a href="iletisim.html">
+              <img src="images/header/iletisim.svg" alt="" />
+              İletişim
+            </a>
+          </div>
+          <div id="mobile-navbar-right">
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+              ><img src="images/header/hamburger.svg" alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="sayfa-banner">
+      <div class="container">
+        <h2>İNVERTERLAR</h2>
+        <div class="sayfa-link">
+          <a href="index.html">Anasayfa</a>
+          <a href="urunler.html">Ürünlerimiz</a>
+          <a href="inverterlar.html">İnverterlar</a>
+        </div>
+      </div>
+    </section>
+    <section class="sayfa-taslak">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-9 sayfa-left pb-5">
+            <p class="urun-aciklama">
+              İnvertörün bir diğer bilinen ismi güç dönüştürücü ya da
+              eviricidir. Inverter kelimesi sıkça karşımıza çıkar. Inverter’in
+              Türkçe anlamı invertördür. İnvertörler, herhangi bir DC kaynaktan
+              gerilim alır ve işler, işlediği gerilimi sabit ya da değişken
+              frekanslı AC gerilimi elde etmek için kullanır.
+            </p>
+            <div class="urunler-sayfa">
+              <div class="urun">
+                <a href="#">
+                  <img
+                    src="images/urunler/İnverterler/offgridinverter.webp"
+                    alt=""
+                  />
+                  <span>Off Grid İnverter</span>
+                </a>
+              </div>
+              <div class="urun">
+                <a href="#">
+                  <img
+                    src="images/urunler/İnverterler/ongridinverter.jpeg"
+                    alt=""
+                  />
+                  <span>On Grid İnverter </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 sayfa-right ps-4">
+            <div class="sidebar">
+              <div class="sayfa-taslak_title">
+                <img class="pe-2" src="images/header/hamburger.svg" alt="" />
+                Menü
+              </div>
+              <div class="list-group">
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/anasayfa.svg" alt="" />
+                  Anasayfa
+                </a>
+                <a
+                  href="hakkimizda.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/hakkimizda.svg" alt="" />
+                  Hakkımızda
+                </a>
+                <a
+                  href="referans-projeler.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/projeler.svg" alt="" />
+                  Projeler
+                </a>
+                <a
+                  href="hizmetlerimiz.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/hizmetler.svg" alt="" />
+                  Hizmetlerimiz
+                </a>
+                <a
+                  href="urunler.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/urunler.svg" alt="" />
+                  Ürünlerimiz
+                </a>
+                <a
+                  href="haberler.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/haberler.svg" alt="" />
+                  Haberler
+                </a>
+                <a
+                  href="iletisim.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <img src="images/header/iletisim.svg" alt="" />
+                  İletişim
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-masaustu">
+      <div class="container">
+        <div class="footer-head">
+          <img src="images/footer-logo.png" alt="" />
+        </div>
+        <div class="row" id="footer-row">
+          <div class="col-4 footer-col">
+            <h3>Hakkımızda</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod
+            </p>
+          </div>
+          <div class="col-3 footer-col">
+            <h3>Hızlı Menü</h3>
+            <ul>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="index.html">Anasayfa </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="hakkimizda.html">Hakkımızda </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="urunler.html">Ürünler </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="hizmetlerimiz.html">Hizmetler </a>
+              </li>
+
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="referans-projeler.html">Referans Projelerimiz </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="kazanimlar.html">Kazanımlar</a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="haberler.html">Haberler</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 footer-col">
+            <h3>İletişim Kanalları</h3>
+            <ul>
+              <li class="iletisim-footer-li">
+                <h4>ADRES</h4>
+                <span
+                  >Karşıyaka Mahallesi Şehit Yalçın <br />
+                  Yamaner Bulvarı No 61-3 <br />
+                  Altınordu/ORDU
+                </span>
+              </li>
+              <li class="iletisim-footer-li">
+                <h4>TELEFON</h4>
+                <span class="pb-1"><b>Merkez:</b> 0(258)2617919</span>
+                <span><b>Depo:</b> 0(258)2418034</span>
+              </li>
+              <li class="iletisim-footer-li">
+                <h4>MAİL</h4>
+                <span class="pb-1"
+                  ><b>Destek:</b> destek@eryuvaenerji.com.tr
+                </span>
+                <span><b>Bilgi:</b> bilgi@eryuvaenerji.com.tr </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 footer-col">
+            <h3>Sosyal Medya</h3>
+            <ul>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="#">Facebook </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="#">Instagram </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="#">Twitter </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="#">WhatsApp </a>
+              </li>
+              <li>
+                <img src="images/index-icon/footer-cizgi.svg" alt="" />
+                <a href="#">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>Copyright © 2023 Eryuva Enerji. Tüm Hakları Alınmıştır.</span>
+          <span
+            ><a href="https://www.ultimatasarim.com/">Ultimatasarim.com </a>
+            tarafından tasarlanmış ve geliştirilmiştir.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <footer id="footer-mobile">
+      <div class="container">
+        <div class="footer-mobile-logo">
+          <img src="images/footer-logo.png" alt="" />
+        </div>
+        <div class="footer-mobile-icerikler">
+          <div class="footer-mobile-icerik">
+            <img src="images/footer/adress.svg" alt="" />
+            <span>Adres</span>
+            <a href="#"
+              >Karşıyaka Mahallesi Şehit Yalçın Yamaner Bulvarı No 61-3
+              Altınordu/ORDU</a
+            >
+          </div>
+          <div class="footer-mobile-icerik">
+            <img src="images/footer/phone.svg" alt="" />
+            <span>Telefon</span>
+            <a href="#">Merkez: 0(258)2617919 </a>
+            <a href="#">Depo: 0(258)2418034 </a>
+          </div>
+          <div class="footer-mobile-icerik">
+            <img src="images/footer/mail.svg" alt="" />
+            <span>Email</span>
+            <a
+              style="letter-spacing: -1px; padding-bottom: 5px"
+              href="mailto:bakirsoymetal@gmail.com"
+              >bilgi@gmail.com
+            </a>
+          </div>
+          <div class="footer-mobile-icerik">
+            <img src="images/footer/time.svg" alt="" />
+            <span>Çalışma Saatleri</span>
+            <p>
+              Pazartesi-Cumartesi <br />
+              <b>08:30-18.00</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          <span class="footer-mobile-first-span"
+            >Copyright © 2023 Eryuva Enerji Tüm Hakları Alınmıştır.</span
+          >
+          <span
+            ><a href="https://www.ultimatasarim.com/">Ultimatasarim.com </a>
+            tarafından tasarlanmış ve geliştirilmiştir.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Haberler -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Hamburger Menu -->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+    <!-- Geniş ürün Yelpazemiz mobil -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Hamburger Menu Dropdown -->
+
+    <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

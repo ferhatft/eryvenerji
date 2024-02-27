@@ -1,0 +1,10 @@
+{% load static %}
+<section class="sayfa-banner">
+    <div class="container">
+        <h2>{{pagetitle|title}}</h2>
+        <div class="sayfa-link">
+            <a href="{% url 'anasayfa' %}">Anasayfa</a>
+            <a href="javascript:void(0)">{{pagetitle|capfirst }}</a>
+        </div>
+    </div>
+</section>

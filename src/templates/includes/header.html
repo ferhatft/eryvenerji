@@ -1,0 +1,129 @@
+{% load static %}
+<!-- Hamburger Menu -->
+<div id="myNav" class="overlay">
+    <div class="hamburger-menu-logo" style="padding-top: 25px; text-align: center">
+        <img src="{% static 'images/footer-logo.png' %}" alt="" />
+    </div>
+    <div class="hamburger-close-button">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <div class="overlay-content">
+        <a href="{% url 'anasayfa' %}">ANASAYFA </a>
+        <a href="{% url 'hakkimizda' %}">HAKKIMIZDA</a>
+        <!-- <button class="dropdown-btn">
+              ÜRÜNLER
+              <img src="./images/svg/hamburger-dropdown.svg' %}" alt="" />
+            </button>
+            <div class="dropdown-container">
+              <a href="boru-ve-profiller-mobile.php">BORU VE PROFİLLLER</a>
+              <button class="dropdown-btn">
+                SACLAR <img src="./images/svg/hamburger-dropdown.svg' %}" alt="" />
+              </button>
+              <div class="dropdown-container">
+                <a href="trapez-saclar-mobile.php">Trapez Saclar</a>
+                <a href="rulo-saclar-mobile.php">Rulo Saclar</a>
+                <a href="levha-saclar-mobile.php">Levha Saclar</a>
+                <a href="dilme-saclar-mobile.php">Dilme Saclar</a>
+              </div>
+              <a href="hadde-mamulleri-mobile.php">HADDE MAMÜLLER</a>
+              <a href="sandvic-panelleri-mobile.php">SANDVİC PANELLER</a>
+              <a href="plastik-cati-kaplamalari-mobile.php"
+                >PLASTİK ÇATI KAPLAMALARI</a
+              >
+              <a href="yalitim-malzemeleri-mobile.php">YALITIM MALZEMELERİ</a>
+              <a href="aksesuarlar-mobile.php">AKSESUARLAR</a>
+            </div> -->
+        <a href="{% url 'blogs' %}">HABERLER </a>
+        <a href="{% url 'portfolio' %}">ÜRÜNLER </a>
+        <a href="{% url 'hizmetlerimiz' %}">HİZMETLER </a>
+        <a href="{% url 'projelerimiz' %}">PROJELER </a>
+        <a href="{% url 'kazanimlarimiz' %}">KAZANIMLAR</a>
+        <a href="{% url 'iletisim' %}">İLETİŞİM </a>
+    </div>
+</div>
+<!-- Header -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-icerikler">
+            <div class="icerik">
+                <div class="icerik-icon">
+                    <img src="{% static 'images/header/telefon.svg' %}" alt="" />
+                </div>
+                <div class="icerik-yazi">
+                    <a href="tel:+905333024589">
+                        Size Bir Telefon Kadar Yakınız. <br />+90 533 302 45 89
+                    </a>
+                </div>
+            </div>
+            <div class="icerik">
+                <div class="icerik-icon">
+                    <img src="{% static 'images/header/mail.svg' %}" alt="" />
+                </div>
+                <div class="icerik-yazi">
+                    <a href="mailto:info@eryuvaenerji.com.tr">
+                        Bize Mail Yoluyla Ulaşın.
+                        <br />info@eryuvaenerji.com.tr
+                    </a>
+                </div>
+            </div>
+            <div class="icerik">
+                <div class="icerik-icon">
+                    <img src="{% static 'images/header/sosyal-medya.svg' %}" alt="" />
+                </div>
+                <div class="icerik-yazi">
+                    Bizi Takip Edin
+                    <div class="social-medias">
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/fb.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/youtube.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/linkedin.svg' %}" alt="" /></a>
+
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/wp.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/twitter.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'images/header/sosyal-medya/insta.svg' %}" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav id="navbar" class="sticky-top">
+    <div class="container">
+        <div class="navbar-full">
+            <div class="logo">
+                <a href="{% url 'anasayfa' %}">
+                    <img src="{% static 'images/header/header-logo.png' %}" alt="" />
+                </a>
+            </div>
+            <div class="navbar-icerik">
+                <a href="{% url 'anasayfa' %}">
+                    <img src="{% static 'images/header/anasayfa.svg' %}" alt="" />
+                    Anasayfa
+                </a>
+                <a href="{% url 'projelerimiz' %}">
+                    <img src="{% static 'images/header/projeler.svg' %}" alt="" />
+                    Projeler
+                </a>
+                <a href="{% url 'hizmetlerimiz' %}">
+                    <img src="{% static 'images/header/hizmetler.svg' %}" alt="" />
+                    Hizmetlerimiz
+                </a>
+                <a href="{% url 'portfolio' %}">
+                    <img src="{% static 'images/header/urunler.svg' %}" alt="" />
+                    Ürünlerimiz
+                </a>
+                <a href="{% url 'blogs' %}">
+                    <img src="{% static 'images/header/haberler.svg' %}" alt="" />
+                    Haberler
+                </a>
+                <a href="{% url 'iletisim' %}">
+                    <img src="{% static 'images/header/iletisim.svg' %}" alt="" />
+                    İletişim
+                </a>
+            </div>
+            <div id="mobile-navbar-right">
+                <span style="font-size: 30px; cursor: pointer" onclick="openNav()"><img
+                        src="{% static 'images/header/hamburger.svg' %}" alt="" /></span>
+            </div>
+        </div>
+    </div>
+</nav>

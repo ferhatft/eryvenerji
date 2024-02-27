@@ -1,0 +1,588 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<!-- Banner -->
+<div class="banner">
+    <div class="container">
+        <div class="banner-left">
+            <h1>GEZEGENİMİZİN GELECEĞİNE <br />YATIRIM YAPIYORUZ!</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
+                est urna. Vivamus quis ante tortor. Fusce a blandit metus. Sed id
+                tellus ac mi tempus tempus. Pellentesque molestie mauris quis nibh
+                convallis feugiat.
+            </p>
+            <div class="banner-links">
+                <a href="#s-s-s" class="banner-btn-1 banner-btn">Teklif Al
+                    <img src="{% static 'images/banner/plus.svg' %}" alt="" />
+                </a>
+                <a href="https://wa.me/905333024589" class="banner-btn-2 banner-btn">İletişime Geç
+                    <img src="{% static 'images/banner/wp.svg' %}" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Referans-Solar-Sıkca-Son -->
+<div class="content-1">
+    <div class="container">
+        <div class="content-1-icerikler">
+            <a href="{% url 'projelerimiz' %}">
+                <div class="content-1-icerik">
+                    <div class="container-1-icon">
+                        <img src="{% static 'images/content-1/referans.svg' %}" alt="" />
+                    </div>
+                    <div class="container-1-title">
+                        REFERANS
+                        <span>PROJELER</span>
+                    </div>
+                </div>
+            </a>
+            <a href="{% url 'kazanimlarimiz' %}">
+                <div class="content-1-icerik">
+                    <div class="container-1-icon">
+                        <img src="{% static 'images/content-1/solar.svg' %}" alt="" />
+                    </div>
+                    <div class="container-1-title">
+                        SOLAR
+                        <span>BİLGİ</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#s-s-s">
+                <div class="content-1-icerik">
+                    <div class="container-1-icon">
+                        <img src="{% static 'images/content-1/soru.svg' %}" alt="" />
+                    </div>
+                    <div class="container-1-title">
+                        SIKÇA
+                        <span>SORULANLAR</span>
+                    </div>
+                </div>
+            </a>
+            <a href="{% url 'blogs' %}">
+                <div class="content-1-icerik">
+                    <div class="container-1-icon">
+                        <img src="{% static 'images/content-1/son.svg' %}" alt="" />
+                    </div>
+                    <div class="container-1-title">
+                        SON
+                        <span>GELİŞMELER</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Günes Enerji Santrali -->
+<div class="gunes-enerji-santral">
+    <div class="container">
+        <div class="gunes-enerji-icerik">
+            <h2>Güneş Enerji Santrali Kurmak</h2>
+            <p>
+                Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                yürütülmektedir.
+            </p>
+            <a class="yesil-button" href="#s-s-s">TEKLİF AL</a>
+        </div>
+    </div>
+</div>
+<!-- Haberler -->
+<div class="haberler">
+    <div class="container">
+        <div class="haberler-title">
+            <img src="{% static 'images/index-icon/haberler-title.svg' %}" alt="" />
+            <h2>Haberler</h2>
+            <p>Buraya Sectionla Alakalı Alt Metin Girilebilir</p>
+        </div>
+        <div class="swiper mySwiper haberler-swipper">
+            <div class="swiper-wrapper">
+                
+                {% for obj in blog  %}
+                    
+                <div class="swiper-slide">
+                    <h4>{{obj.title|title}}</h4>
+                    <p>{{obj.intro|safe}}
+                    </p>
+                    <span>{{obj.created_date}}</span>
+                </div>
+                {% endfor %}
+                    
+                
+                <div class="swiper-slide">
+                    <h4>BAŞLIK</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                        porro commodi dolores doloribus, at qui fugit corrupti neque
+                        facere officia explicabo, nulla quos molestiae nostrum iusto
+                        optio eos nemo quibusdam eligendi reiciendis laboriosam expedita
+                        dolor. Commodi nulla est atque quod blanditiis eum fugit aut
+                        natus in voluptate alias ipsa at, praesentium ipsum dicta
+                        mollitia totam odit? Consequatur esse dignissimos error fuga
+                        laborum quidem harum odio. Corrupti error deleniti at quod sed,
+                        reprehenderit voluptates dolores hic fugit voluptate tempora
+                        amet. Ea blanditiis, asperiores praesentium sequi voluptatem
+                        magnam consequatur facilis nobis. Similique, provident? Autem
+                        ipsam corporis animi, quae veniam facere minus molestiae.
+                    </p>
+                    <span>Aralık 11, 2022</span>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<!-- Projelendirme Süreçleri -->
+<div class="projelendirme-surecleri">
+    <div class="container">
+        <div class="projelendirme-surecleri-title">
+            <img src="{% static 'images/index-icon/projelendirme-surec-icon.svg' %}" alt="" />
+            <h2>Güneş Enerji Santrali Projelendirme Süreçleri</h2>
+        </div>
+        <div class="projelendirme-surecleri-icerikler">
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/kesif.svg' %}" alt="" />
+                <h4>KEŞİF</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/muhendislik.svg' %}" alt="" />
+                <h4>MÜHENDİSLİK</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/maliyet.svg' %}" alt="" />
+                <h4>MALİYET ANALİZİ</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/basvuru.svg' %}" alt="" />
+                <h4>BAŞVURU</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+        </div>
+        <div class="projelendirme-surecleri-title">
+            <img src="{% static 'images/index-icon/projelendirme-surec-icon.png' %}" alt="" />
+            <h2>Güneş Enerji Santrali Kurulum Süreçleri</h2>
+        </div>
+        <div class="projelendirme-surecleri-icerikler">
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/ges.svg' %}" alt="" />
+                <h4>GES PROJE ONAYI</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/satin-alma.svg' %}" alt="" />
+                <h4>SATIN ALMA</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/nakliye.svg' %}" alt="" />
+                <h4>NAKLİYE</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+
+            <div class="surec-icerik">
+                <img src="{% static 'images/index-icon/kurulum.svg' %}" alt="" />
+                <h4>KURULUM</h4>
+                <p>
+                    Güneş enerjisi elektrik üretimi ve satışı için yerel dağıtım
+                    firmasına yapılan başvurularda ilk dört sürecin tamamlanması
+                    gerekmektedir. Tüm süreçler Eryuva Enerji tarafından sizin adınıza
+                    yürütülmektedir.
+                </p>
+            </div>
+        </div>
+        <div class="projelendirme-bilgi">
+            <p>
+                Yukarıdaki süreçlerin tamamlanması ile geçici kabul <br />başlatılır
+                ve yerel dağıtım firması ile sistem kullanım anlaşması imzalanır.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Kazanımlar -->
+<div class="kazanimlar">
+    <div class="container">
+        <div class="kazanimlar-title">
+            <h5>KAZANIMLAR</h5>
+            <h2>
+                Neden Güneş Enerji <br />
+                Santrali Kurmalıyız?
+            </h2>
+        </div>
+        <div class="kazanimlar-icerikler">
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-elektrik.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Elektrik faturası!</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-cevre.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Çevre dostu</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-kisa.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Kısa amortisman imkânı</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-zam.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Zam derdi yok!</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-evinize.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Evinize değer katar!</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-guvenli.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Güvenli yatırım!</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-enerji.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Enerji bağımlılığını ortadan kaldırır</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="kazanim-detay">
+                <div class="kazanim-detay-icon">
+                    <img src="{% static 'images/index-icon/kazanim-mobil.svg' %}" alt="" />
+                </div>
+                <div class="kazanim-detay-icerik">
+                    <h5>Mobil Enerji</h5>
+                    <p>
+                        Güneş enerjisinin faydaları arasında elektrik faturasından
+                        tasarruf alıyor. Güneş enerji
+                    </p>
+                    <a href="{% url 'kazanimlarimiz' %}">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Güneşi Seviyoruz -->
+<div id="gunesi-seviyoruz-index" class="gunes-biz">
+    <div class="container">
+        <div class="gunes-biz-icerik">
+            <div class="gunes-biz-left">
+                <img src="{% static 'images/gunesi-seviyoruz.jpg' %}" alt="" />
+            </div>
+            <div class="gunes-biz-right">
+                <h5>GÜNEŞİ SEVİYORUZ</h5>
+                <h2>Temiz Enerji Kaynağımız.</h2>
+                <p>
+                    Güneş enerjisinin ilk ve en önemli avantajı bir defaya mahsus
+                    olmak üzere panel üretimi sırasında çıkan emisyonun ötesinde
+                    herhangi ilave bir sera gazını süreç içerisinde atmosfere
+                    yaymamasıdır.
+                    <br />
+                    <br />
+                    Bu çerçevede, güneş enerjisi, herhangi bir duman, gaz veya diğer
+                    kimyasal yan ürünlerden uzak bir süreç ile direk güneş ışınımını
+                    elektrik enerjisine çevirerek üretilir. Bu, aslında tüm yeşil
+                    enerji teknolojilerinin arkasındaki ana itici güçtür, çünkü
+                    ülkeler emisyonları azaltmada iklim değişikliği yükümlülüklerini
+                    yerine getirmeye çalışırlar.
+                </p>
+                <a class="yesil-button" href="{% url 'kazanimlarimiz' %}">DAHA FAZLA</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hikayemizi Anlatalım -->
+<div id="biz-kimiz-index" class="gunes-biz">
+    <div class="container">
+        <div class="gunes-biz-icerik hikaye">
+            <div class="gunes-biz-left">
+                <img src="{% static 'images/biz-kimiz.jpg' %}" alt="" />
+            </div>
+            <div class="gunes-biz-right">
+                <h5>BİZ KİMİZ?</h5>
+                <h2>Size Hikayemizi Anlatalım</h2>
+                <p>
+                    Enter Sun Exchange, the world’s first peer-to-peer solar leasing
+                    platform. Through Sun Exchange, anyone, anywhere in the world, can
+                    own solar energy-producing cells and build wealth by leasing those
+                    cells to power businesses and organisations in emerging markets,
+                    with installations and maintenance taken.
+                    <br />
+                    <br />
+                    care of by one of Sun Exchange’s carefully selected installation
+                    partners. We leverage financial innovation and the power.
+                </p>
+                <a class="yesil-button" href="{% url 'hakkimizda' %}">DAHA FAZLA</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Referans Projelerimiz -->
+<div class="referans-projeleri">
+    <div class="container">
+        <div class="referans-projleri-title">
+            <img src="{% static 'images/index-icon/projelendirme-surec-icon.png' %}" alt="" />
+            <h4>ERYUVA ENERJİ KALİTESİYLE</h4>
+            <h2>Referans Projelerimiz</h2>
+        </div>
+        <div class="referans-projeler">
+            
+            {% for obj in projeler  %}
+            <div class="referans-proje">
+                <div class="proje-pic">
+                    <img src="{{obj.ProjelerimizModelGaleri.first.image.url}}" alt="" />
+                </div>
+                <div class="proje-icerik">
+                    <span>{{obj.created_date}}</span>
+                    <h4>{{obj.title|title}}</h4>
+                    <p>
+                        {{obj.decription|safe|truncatewords:30}}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="proje-button">
+            <a class="yesil-button" href="{% url 'projelerimiz' %}">TÜMÜNÜ GÖR</a>
+        </div>
+    </div>
+</div>
+<!-- Sıkça Sorulan Sorular -->
+<div id="s-s-s" class="sikca-sorulan-sorular">
+    <div class="container">
+        <div class="sorular-baslik">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <p>Buraya Sectionla Alakalı Alt Metin Girilebilir</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            {% for obj in faq  %}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        {{obj.question|safe}}
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        {{obj.answer|safe}}
+                    </div>
+                </div>
+            </div> 
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Bizimle İletişime Geçin -->
+<div class="iletisim">
+    <div class="container">
+        <div class="iletisim-baslik">
+          <h2>Bizimle İletişme Geç!</h2>
+          <p>
+            İhtiyacınıza uygun sistemleri sizin için tasarlıyoruz.
+            <br />Detaylı bilgi için lütfen bizimle irtibata geçiniz.
+          </p>
+        </div>
+        <div class="iletisim-icerik">
+          <form action="{% url 'iletisim' %}" method="POST">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="name"> </span>
+              <input
+                type="text"
+                class="form-control"
+                maxlength="35"
+                name="name"
+                required=""
+                placeholder="Adınız Soyadınız"
+                aria-label="name"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="phone"> </span>
+              <input
+                type="number"
+                name="phone"
+                required=""
+                class="form-control"
+                placeholder="Telefon Numaranız"
+                aria-label="phone"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email"> </span>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="E-Posta Adresiniz"
+                aria-label="email"
+                aria-describedby="basic-addon1"
+                required=""
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="subject"> </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Sistemin Kurulacağı Yer"
+                name="location"
+                required=""
+                aria-label="subject"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="subject"> </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Talep Ettiğiniz Sistem"
+                name="system"
+                required=""
+                aria-label="subject"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="subject"> </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Kurulum İstediğiniz İl"
+                name="il"
+                required=""
+                aria-label="subject"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mesaj-kutu">
+              <span class="input-group-text"> </span>
+              <textarea
+                class="form-control"
+                name="message"
+                maxlength="500"
+                placeholder="Mesajınız"
+                required=""
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+            <div class="iletisim-button">
+              <button
+                href="#"
+                style="border: none"
+                class="yesil-button"
+                name="send"
+                type="submit"
+              >
+                GÖNDER
+              </button>
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

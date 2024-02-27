@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{%load static%}
+{% load i18n %}
+{% block body  %}
+
+{% include 'includes/banner.html' %}
+
+
+<section class="sayfa-taslak">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-9 sayfa-left pb-5">
+          <div class="iletisim">
+            <div class="iletisim-baslik">
+              <h2>Bizimle İletişme Geç!</h2>
+              <p>
+                İhtiyacınıza uygun sistemleri sizin için tasarlıyoruz.
+                <br />Detaylı bilgi için lütfen bizimle irtibata geçiniz.
+              </p>
+            </div>
+            <div class="iletisim-icerik">
+              <form action="{% url 'iletisim' %}" method="POST">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="name"> </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    maxlength="35"
+                    name="name"
+                    required=""
+                    placeholder="Adınız Soyadınız"
+                    aria-label="name"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="phone"> </span>
+                  <input
+                    type="number"
+                    name="phone"
+                    required=""
+                    class="form-control"
+                    placeholder="Telefon Numaranız"
+                    aria-label="phone"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="email"> </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="E-Posta Adresiniz"
+                    aria-label="email"
+                    aria-describedby="basic-addon1"
+                    required=""
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="subject"> </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Sistemin Kurulacağı Yer"
+                    name="location"
+                    required=""
+                    aria-label="subject"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="subject"> </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Talep Ettiğiniz Sistem"
+                    name="system"
+                    required=""
+                    aria-label="subject"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="subject"> </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Kurulum İstediğiniz İl"
+                    name="il"
+                    required=""
+                    aria-label="subject"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mesaj-kutu">
+                  <span class="input-group-text"> </span>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    maxlength="500"
+                    placeholder="Mesajınız"
+                    required=""
+                    aria-label="With textarea"
+                  ></textarea>
+                </div>
+                <div class="iletisim-button">
+                  <button
+                    href="#"
+                    style="border: none"
+                    class="yesil-button"
+                    name="send"
+                    type="submit"
+                  >
+                    GÖNDER
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {% include 'includes/blogsidebar.html' %}
+      </div>
+    </div>
+  </section>
+
+
+{% endblock body  %}
